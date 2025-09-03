@@ -1,0 +1,9 @@
+package com.example.payroll.repository;
+
+import com.example.payroll.entity.Job;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface JobRepository extends JpaRepository<Job, Long> {
+    List<Job> findByDepartmentId(Long departmentId);
+}
