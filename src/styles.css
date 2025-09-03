@@ -1,0 +1,41 @@
+:root {
+  --glass: rgba(255,255,255,0.75);
+  --glass-dark: rgba(0,0,0,0.2);
+  --shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Background helpers */
+.bg-admin {
+  background: url('/src/assets/bg-admin.svg') center/cover no-repeat fixed;
+  min-height: 100vh;
+}
+.bg-employee {
+  background: url('/src/assets/bg-employee.svg') center/cover no-repeat fixed;
+  min-height: 100vh;
+}
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  border-radius: 16px;
+}
+.brand-gradient {
+  background: linear-gradient(135deg, #7C3AED, #06B6D4);
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.navbar-blur {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow);
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: all .2s ease;
+}
+.table thead th {
+  background: #f8fafc;
+}
+.pointer { cursor: pointer; }
